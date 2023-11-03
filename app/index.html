@@ -20,7 +20,7 @@
   <body>
     <header>
       <img src="assets/images/icons/platinum_travel.svg" />
-      <a href="#">Хамт аялах</a>
+      <a href="#" class="btn">Хамт аялах</a>
       <nav>
         <ul>
           <li><a href="#our-beginning">Эхлэл</a></li>
@@ -31,80 +31,132 @@
     </header>
 
     <div class="large-hero">
-      <img src="assets/images/hero--large.jpg" />
-      <h1>Таны нандин дурсамж.</h1>
-      <h2>Ганцхан алхам үлдлээ.</h2>
-      <p>Бид таны амьдралыг аз жаргал, адал явдлаар дүүргэх болно.</p>
-      <p><a href="#">Өнөөдөр эхлэе</a></p>
+      <picture>
+        <source
+          srcset="
+            assets/images/hero--large-i.jpg      1920w,
+            assets/images/hero--large-hi-dpi.jpg 3840w
+          "
+          media="(min-width: 1380px)"
+        />
+        <source
+          srcset="
+            assets/images/hero--medium.jpg        1380w,
+            assets/images/hero--medium-hi-dpi.jpg 2760w
+          "
+          media="(min-width: 990px)"
+        />
+        <source
+          srcset="
+            assets/images/hero--small.jpg         990w,
+            assets/images/hero--small-hi-dpi.jpg 1980w
+          "
+          media="(min-width: 640px)"
+        />
+        <img
+          class="large-hero__image"
+          srcset="
+            assets/images/hero--smaller.jpg         640w,
+            assets/images/hero--smaller-hi-dpi.jpg 1280w
+          "
+          alt="Ocean view"
+        />
+      </picture>
+      <div class="large-hero__text-content">
+        <div class="wrapper">
+          <h1 class="large-hero__title">Таны нандин дурсамж.</h1>
+          <h2 class="large-hero__subtitle">Ганцхан алхам үлдлээ.</h2>
+          <p class="large-hero__description">
+            Бид таны амьдралыг аз жаргал, адал явдлаар дүүргэх болно.
+          </p>
+          <p>
+            <a href="#" class="btn btn--orange btn--large">Өнөөдөр эхлэе</a>
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div id="our-beginning">
-      <h2>Бид анх өөрсдийнхөө аяллаар эхлэж байлаа.</h2>
-      <h3>Одоо бид бусдын аяллыг дурсамжтай болгохыг зорьж байна.</h3>
-      <img
-        src="assets/images/first-trip.jpg"
-        alt="Couple walking down a street."
-      />
-      <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe" />
-      <h2>Бид хэрхэн эхлэсэн бэ?</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-      </p>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        velit esse cillum <strong>dolore eu fugiat.</strong>
-      </p>
+    <div id="our-beginning" class="page-section">
+      <div class="wrapper">
+        <h2
+          class="headline headline--centered headline--light headline--b-margin-small"
+        >
+          Бид анх <strong>өөрсдийнхөө аяллаар</strong> эхлэж байлаа.
+        </h2>
+        <h3
+          class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large"
+        >
+          Одоо бид <strong>бусдын аяллыг</strong> дурсамжтай болгохыг зорьж
+          байна.
+        </h3>
+        <img
+          src="assets/images/first-trip.jpg"
+          alt="Couple walking down a street."
+        />
+        <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe" />
+        <h2 class="headline">Бид хэрхэн эхлэсэн бэ?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, <a href="#">quis nostrud exercitation</a> ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum velit esse cillum <strong>dolore eu fugiat.</strong>
+        </p>
+      </div>
     </div>
 
-    <div id="features">
-      <img src="assets/images/icons/star.svg" />
-      <h2>Бидний онцлогууд</h2>
+    <div id="features" class="page-section page-section--blue">
+      <div class="wrapper">
+        <img src="assets/images/icons/star.svg" />
+        <h2>Бидний онцлогууд</h2>
 
-      <img src="assets/images/icons/rain.svg" />
-      <h3>Бид цаг уурыг аждаг</h3>
-      <p>
-        Манай апп-ыг татаж авч ашиглавал бид танд бороо орохоос 20 минутын өмнө
-        мэдэгдэж байх болно. Бусад мэдээллүүдийг ч цаг тухайд нь авах боломжтой.
-      </p>
+        <img src="assets/images/icons/rain.svg" />
+        <h3>Бид цаг уурыг аждаг</h3>
+        <p>
+          Манай апп-ыг татаж авч ашиглавал бид танд бороо орохоос 20 минутын
+          өмнө мэдэгдэж байх болно. Бусад мэдээллүүдийг ч цаг тухайд нь авах
+          боломжтой.
+        </p>
 
-      <img src="assets/images/icons/globe.svg" />
-      <h3>Аяллын лавлах</h3>
-      <p>
-        Таны урд хожид огт сонсож байгаагүй, дэлхий дээрх үзэсгэлэнт газрууд,
-        аялал жуулчлалын гайхалтай хотуудын талаар бид судласан бөгөөд та
-        тэдгээр газруудаас сонгон аялж болно.
-      </p>
+        <img src="assets/images/icons/globe.svg" />
+        <h3>Аяллын лавлах</h3>
+        <p>
+          Таны урд хожид огт сонсож байгаагүй, дэлхий дээрх үзэсгэлэнт газрууд,
+          аялал жуулчлалын гайхалтай хотуудын талаар бид судласан бөгөөд та
+          тэдгээр газруудаас сонгон аялж болно.
+        </p>
 
-      <img src="assets/images/icons/wifi.svg" />
-      <h3>Wi-Fi-тай цэгүүд</h3>
-      <p>
-        Манай апп-ыг татаж авснаар өөрийн аялж буй газар оронд байгаа үнэгүй
-        wi-fi бүхий цэгүүд, нууц үгсийн мэдээллийг авах боломжтой бөгөөд хэзээ ч
-        холбоо тасрах аюулгүй болох юм.
-      </p>
+        <img src="assets/images/icons/wifi.svg" />
+        <h3>Wi-Fi-тай цэгүүд</h3>
+        <p>
+          Манай апп-ыг татаж авснаар өөрийн аялж буй газар оронд байгаа үнэгүй
+          wi-fi бүхий цэгүүд, нууц үгсийн мэдээллийг авах боломжтой бөгөөд хэзээ
+          ч холбоо тасрах аюулгүй болох юм.
+        </p>
 
-      <img src="assets/images/icons/fire.svg" />
-      <h3>Аяллын хэрэгслүүд</h3>
-      <p>
-        Та манай аяллуудаар гурваас дээш удаа аялбал бид танд майхан барих, гал
-        түлэх, хоол хийх, загас барих хэрэгслүүдийг бэлэглэх болно.
-      </p>
+        <img src="assets/images/icons/fire.svg" />
+        <h3>Аяллын хэрэгслүүд</h3>
+        <p>
+          Та манай аяллуудаар гурваас дээш удаа аялбал бид танд майхан барих,
+          гал түлэх, хоол хийх, загас барих хэрэгслүүдийг бэлэглэх болно.
+        </p>
+      </div>
     </div>
 
     <div id="testimonials">
@@ -148,7 +200,7 @@
     <footer>
       <p>
         Copyright &copy; 2019 Platinum Travel. All rights reserved.
-        <a href="#">Хамт аялах</a>
+        <a href="#" class="btn btn--orange">Хамт аялах</a>
       </p>
     </footer>
     <!-- "modal" хичээлийг үзтэлээ энэ тайлбар бүхий хэсгийг битгий нээгээрэй
@@ -169,5 +221,6 @@
     <div class="modal__close">X</div>
   </div>
   This is the end of the "modal" reference HTML -->
+    <script src="bundled.js"></script>
   </body>
 </html>
