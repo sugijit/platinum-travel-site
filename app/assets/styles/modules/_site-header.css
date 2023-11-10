@@ -105,6 +105,7 @@
     position: relative;
 
     @mixin atMedium {
+      opacity: 1;
       display: block;
       padding-top: 0;
       z-index: 1;
