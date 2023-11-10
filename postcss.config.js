@@ -6,6 +6,7 @@ const config = {
     require("postcss-simple-vars"),
     require("postcss-import"),
     require("postcss-mixins"),
+    require("postcss-hexrgba"),
   ],
 };
 
