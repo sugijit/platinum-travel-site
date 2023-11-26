@@ -7,6 +7,7 @@ const config = {
     require("postcss-import"),
     require("postcss-mixins"),
     require("postcss-hexrgba"),
+    require("cssnano"),
   ],
 };
 
